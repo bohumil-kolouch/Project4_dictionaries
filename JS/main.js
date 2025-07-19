@@ -1,11 +1,13 @@
 // JavaScript code to demonstrate dictionary and display results in HTML elements
 function my_Dictionary()    {
-    var Animal = {
-        Species: "Dog",
+    var Computer = {
+        Type: "Desktop",
+        Brand: "Dell",
+        Location: "Living room",
+        Windows: "Windows 11",
         Color: "Black",
-        Breed: "Labrador",
-        Age: 5,
-        Sound: "Bark!"
+        Managed: "Yes"
     };
-    document.getElementById("Dictionary").innerHTML = Animal.Sound;
+    delete Computer.Windows; // Deleting the Windows property - undefined
+    document.getElementById("Dictionary").innerHTML = Computer.Windows;
 }
